@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traductor</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Traductor</h1>
+      <div>
+        <label for="palabra">Palabra:</label>
+        <input type="text" id="palabra" />
+      </div>
+      <div>
+        <label for="idioma-origen">Idioma de origen:</label>
+        <select id="idioma-origen">
+          <option value="es">Español</option>
+          <option value="en">Inglés</option>
+        </select>
+      </div>
+      <div>
+        <label for="idioma-destino">Idioma de destino:</label>
+        <select id="idioma-destino">
+          <option value="es">Español</option>
+          <option value="en">Inglés</option>
+        </select>
+      </div>
+      <button id="traducir-btn">Traducir</button>
+      <div id="resultado" style="display: none">
+        <h2>Traducción:</h2>
+        <p id="traduccion"></p>
+      </div>
+      <div id="historial" style="display: none">
+        <h2>Historial de Traducciones:</h2>
+        <ul id="lista-historial"></ul>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+    <!-- Enlace al script JavaScript -->
+  </body>
+</html>
